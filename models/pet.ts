@@ -21,14 +21,14 @@ export interface Pet {
 
 
 export const dog: Pet = {
-    id: 0,
+    id: new Date().getTime(),
     category: {
       id: 0,
-      name: 'string'
+      name: 'animals'
     },
-    name: 'doggie',
+    name: 'doggo',
     photoUrls: [
-      'string'
+      'https://image.shutterstock.com/image-photo/happy-puppy-welsh-corgi-14-260nw-2270841247.jpg'
     ],
     tags: [
       {
@@ -69,14 +69,19 @@ export const dog: Pet = {
 }
 
   export const user: User = {
-    "id": 0,
-    "username": "dogo",
-    "firstName": "dogi",
-    "lastName": "doga",
-    "email": "dogo@doga.fr",
-    "password": "string",
-    "phone": "0607080910",
-    "userStatus": 0
+    id: 0,
+    username: "dogo",
+    firstName: "dogi",
+    lastName: "doga",
+    email: "dogo@doga.fr",
+    password: "string",
+    phone: "0607080910",
+    userStatus: 0
+  }
+
+  export const userUpdated: User = {
+    ...user,
+    username: 'felix'
   }
 
   
